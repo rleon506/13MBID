@@ -71,5 +71,10 @@ def visualize_data(
     print(f"Figuras guardadas en: {output_dir}")
 
 
+    ##################################################################################s
+    # TODO: Agregar al menos dos (2) gráficos adicionales que consideren variables.
+    # OPCIÓN EXTRA (ejemplo):  agregar la generación del reporte con ydata-profiling.
+    ##################################################################################
+
 if __name__ == "__main__":
     visualize_data()
