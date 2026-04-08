@@ -9,3 +9,7 @@ stages:
       - docs/figures/target_distribution.png
       - docs/figures/correlation_heatmap_creditos.png
       - docs/figures/correlation_heatmap_tarjetas.png
+      - docs/figures/boxplot_importe_falta_pago.png
+      - docs/figures/boxplot_limite_nivel_tarjeta.png
+      - docs/reporte_creditos.html
+      - docs/reporte_tarjetas.html

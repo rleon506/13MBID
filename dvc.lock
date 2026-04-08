@@ -13,18 +13,34 @@ stages:
       size: 845190
     - path: src/data_visualization.py
       hash: md5
-      md5: 72e9d67ecd0fc4abad1d5649988055f9
-      size: 2344
+      md5: d09e95fff1e105996c457f5d65141090
+      size: 4325
     outs:
+    - path: docs/figures/boxplot_importe_falta_pago.png
+      hash: md5
+      md5: d038db365e105a4a698e8789b048ae98
+      size: 25078
+    - path: docs/figures/boxplot_limite_nivel_tarjeta.png
+      hash: md5
+      md5: 8659bc259b3bb59c77b08ea35995152a
+      size: 22826
     - path: docs/figures/correlation_heatmap_creditos.png
       hash: md5
-      md5: 1ee8da37ea8fab2d182485b80ad04890
-      size: 80669
+      md5: 74a83f598a865f4b29ffd7bcdcb90e37
+      size: 80680
     - path: docs/figures/correlation_heatmap_tarjetas.png
       hash: md5
-      md5: 8cef0a8b0b1359e5a49d1916fd9eae3b
-      size: 56677
+      md5: cd3364f027701a4c6ae9846d842d3ba4
+      size: 56582
     - path: docs/figures/target_distribution.png
       hash: md5
-      md5: 0033759774c4b6c742f541e03c99fc2a
-      size: 21499
+      md5: 572f0cf0325c23e20d6d1ec246b01998
+      size: 21491
+    - path: docs/reporte_creditos.html
+      hash: md5
+      md5: 55de23d67bfd63c25e1573335b6baaad
+      size: 3824635
+    - path: docs/reporte_tarjetas.html
+      hash: md5
+      md5: 5631273dddfb2eda2b572f176bd84713
+      size: 3049047
