@@ -86,8 +86,3 @@ def test_great_expectations():
         (df_tarjetas["operaciones_ult_12m"] > 0).all(),
         "Las operaciones deben ser mayores a 0."
     )
-
-    #############################################################################
-    # TODO: Agregar al menos dos (2) validaciones más para el dataset de tarjetas.
-    # Por ejemplo: rangos de valores para el atrbuto de límite de crédito o el estado_civil o nivel de estudios.
-    ##############################################################################
