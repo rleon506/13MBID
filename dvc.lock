@@ -13,8 +13,8 @@ stages:
       size: 845190
     - path: src/data_visualization.py
       hash: md5
-      md5: d09e95fff1e105996c457f5d65141090
-      size: 4325
+      md5: 5b3a9cc752381bda5b01c82496e5ed54
+      size: 3971
     outs:
     - path: docs/figures/boxplot_importe_falta_pago.png
       hash: md5
@@ -38,9 +38,9 @@ stages:
       size: 21491
     - path: docs/reporte_creditos.html
       hash: md5
-      md5: 55de23d67bfd63c25e1573335b6baaad
-      size: 3824635
+      md5: ec54fbecb97fd7d38c9db2cad746c6f3
+      size: 3824868
     - path: docs/reporte_tarjetas.html
       hash: md5
-      md5: 5631273dddfb2eda2b572f176bd84713
-      size: 3049047
+      md5: 5508b972612d15a4416663a6e3351709
+      size: 3048911
