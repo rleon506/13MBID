@@ -56,7 +56,7 @@ def test_great_expectations():
     # Atributo a analizar: Exactitud (rangos de valores en datos)
     add_expectation(
         "rango_edad", # Verificar que la edad esté entre 18 y 100 años
-        df_creditos["edad"].between(90, 100).all(), # La validación a realizar
+        df_creditos["edad"].between(18, 100).all(), # La validación a realizar
         "La edad debe estar entre 18 y 100 años." # Mensaje de error en caso de que la validación falle
     )
     add_expectation(
