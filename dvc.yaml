@@ -15,7 +15,7 @@ stages:
       - docs/reporte_tarjetas.html
 
   test_pandera:
-    cmd: pytest --html=docs/report_basico.html --self-contained-html test/test_data_quality.py -v || true
+    cmd: powershell -Command "pytest --html=docs/report_basico.html --self-contained-html test/test_data_quality.py -v; exit 0"
     deps:
     - data/raw/datos_creditos.csv
     - data/raw/datos_tarjetas.csv
@@ -24,7 +24,7 @@ stages:
     - docs/report_basico.html
 
   test_ge:
-    cmd: pytest --html=docs/report_ge.html --self-contained-html test/test_data_quality_ge.py -v || true
+    cmd: powershell -Command "pytest --html=docs/report_ge.html --self-contained-html test/test_data_quality_ge.py -v; exit 0"
     deps:
     - data/raw/datos_creditos.csv
     - data/raw/datos_tarjetas.csv
