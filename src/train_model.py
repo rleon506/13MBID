@@ -102,7 +102,15 @@ def train_model(
     # Pipeline con el mejor modelo según la experimentación previa: RandomForest
     # ---------------------------------------------------------------------------
     #modelo = LogisticRegression(max_iter=2000)
-    modelo = RandomForestClassifier(random_state=42)
+    #modelo = RandomForestClassifier(random_state=42)
+    modelo = RandomForestClassifier(
+    n_estimators=300,
+    max_depth=20,
+    min_samples_split=5,
+    min_samples_leaf=2,
+    max_features="sqrt",
+    random_state=42
+)
 
     preprocessor = create_preprocessor(features_X)
 
