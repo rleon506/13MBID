@@ -134,3 +134,20 @@ stages:
       hash: md5
       md5: 0f97c6a73a7f10771cc62891aa4f3770
       size: 5423
+  test_model:
+    cmd: powershell -Command "pytest --html=docs/report_model.html 
+      --self-contained-html test/test_train.py -v; exit 0"
+    deps:
+    - path: data/processed/datos_integrados.csv
+      hash: md5
+      md5: 498a2e79c21c4f95f9dac8b2a9556bc2
+      size: 2064939
+    - path: test/test_train.py
+      hash: md5
+      md5: 20eabf5a1c80490d8524679b793f2129
+      size: 1630
+    outs:
+    - path: docs/report_model.html
+      hash: md5
+      md5: 72dc3fafc82aa42032293deccacda6d3
+      size: 34932

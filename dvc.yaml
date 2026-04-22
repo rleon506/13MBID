@@ -52,3 +52,11 @@ stages:
       - docs/figures/confusion_matrix.png
     metrics:
       - metrics/train_metrics.json
+
+  test_model:
+    cmd: powershell -Command "pytest --html=docs/report_model.html --self-contained-html test/test_train.py -v; exit 0"
+    deps:
+    - data/processed/datos_integrados.csv
+    - test/test_train.py
+    outs:
+    - docs/report_model.html
